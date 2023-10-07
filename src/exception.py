@@ -23,5 +23,8 @@ class CustomException(Exception):
 #     try:
 #         a=1/0
 #     except Exception as e:
-#         logging.info("Divisible by zero exception")
+#         # logging.info("Divisible by zero exception")
+#         e_msg=CustomException(e,sys)
+#         logging.info(e_msg)
 #         raise CustomException(e,sys)
+
