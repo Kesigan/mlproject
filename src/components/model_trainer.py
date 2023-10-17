@@ -91,11 +91,11 @@ class ModelTrainer:
             best_model_score= max(sorted(model_repot.values()))
 
             ## To get best model name from Dict
-            best_mode_name=list(model_repot.keys())[
+            best_model_name=list(model_repot.keys())[
                 list(model_repot.values()).index(best_model_score)
             ]
 
-            best_model = models[best_mode_name]
+            best_model = models[best_model_name]
 
             if best_model_score<0.6:
                 raise CustomException("No best model found")
